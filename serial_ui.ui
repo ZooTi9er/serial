@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>serial</class>
+ <widget class="QWidget" name="serial">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>673</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>10</y>
+     <width>216</width>
+     <height>410</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>串口选择</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="8" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QCheckBox" name="checkBox_RTS">
+        <property name="text">
+         <string>RTS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_3">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>自动保存</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QCheckBox" name="checkBox_HexView">
+        <property name="text">
+         <string>16进制显示</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_DTR">
+        <property name="text">
+         <string>DTR</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="9" column="0" colspan="2">
+     <widget class="QCheckBox" name="checkBox_TimeView">
+      <property name="text">
+       <string>时间戳</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>保存串口</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_ReceiveClear">
+        <property name="text">
+         <string>清除接收</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QComboBox" name="comboBox_Com"/>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>串口操作</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Open">
+        <property name="text">
+         <string>打开串口</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>校验位</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_Check"/>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>数据位</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_Date"/>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>停止位</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_Stop"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>波特率</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_Baud"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>571</width>
+     <height>391</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>450</y>
+     <width>661</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>470</y>
+     <width>92</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_Send">
+      <property name="text">
+       <string>发送</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_Clear">
+      <property name="text">
+       <string>清除发送</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>610</y>
+     <width>661</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_9">
+      <item>
+       <widget class="QCheckBox" name="checkBox_TimeSend">
+        <property name="text">
+         <string>定时发送</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>周期</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_IntervalTime"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>ms</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_10">
+      <item>
+       <widget class="QCheckBox" name="checkBox_HexSend">
+        <property name="text">
+         <string>16进制发送</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox_End">
+        <property name="text">
+         <string>发送新行</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
